@@ -1,17 +1,19 @@
 import { test } from '../../../_fixtures/fixtures';
-import { COFFEE_NAMES } from '../../../../src/constants';
 
-test('Cart cleaned after page refresh', async ({ cartPage, menuPage }) => {
-  await menuPage.open();
-  await menuPage.clickCoffeeCup(COFFEE_NAMES.cappuccino);
+const name = 'Cappuccino';
+const name_second = 'Cappucino';
 
-  await menuPage.clickCartLink();
-  await cartPage.waitForLoading();
+test('test 1', async ({ cartPage, menuPage }) => {
+  await menuPage.someMethod();
+  await menuPage.click(name);
 
-  await cartPage.assertCoffeeItemIsVisible(COFFEE_NAMES.cappuccino);
+  await menuPage.clickLink();
+  await cartPage.waitfor();
+
+  await cartPage.assertitemisvisible(name_second);
 
   await cartPage.reload();
 
-  await cartPage.assertCoffeeItemIsHidden(COFFEE_NAMES.cappuccino);
+  await cartPage.assertCoffeeItemIsHidden(name);
   await cartPage.assertNoCoffeeMessageIsVisible();
 });
