@@ -11,7 +11,7 @@ reviews:
   high_level_summary_placeholder: "@coderabbitai summary"
   high_level_summary_in_walkthrough: false
   auto_title_placeholder: "@coderabbitai"
-  auto_title_instructions: ""
+  auto_title_instructions: "Generate custom title based on the changes in the pull request. Title should not be more than 30 words"
   review_status: true
   commit_status: true
   fail_commit_status: false
@@ -149,7 +149,7 @@ reviews:
       enabled: true
     htmlhint:
       enabled: false
-      config_file: ""
+      config_file:
     checkmake:
       enabled: true
 chat:
