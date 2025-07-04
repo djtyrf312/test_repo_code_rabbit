@@ -17,10 +17,10 @@ reviews:
   fail_commit_status: false
   collapse_walkthrough: false
   changed_files_summary: true
-  sequence_diagrams: true
+  sequence_diagrams: false
   assess_linked_issues: true
   related_issues: true
-  related_prs: true
+  related_prs: false
   suggested_labels: true
   auto_apply_labels: false
   suggested_reviewers: true
@@ -29,7 +29,7 @@ reviews:
   labeling_instructions:
     - label: ""
       instructions: ""
-  path_filters: ['!src/ignoreFolder']
+  path_filters: ['!src/ignoreFolder', ".coderabbit.yaml"]
   path_instructions:
   - path: "*"
     instructions: 
@@ -150,7 +150,6 @@ reviews:
       enabled: true
     htmlhint:
       enabled: false
-      config_file:
     checkmake:
       enabled: true
 chat:
