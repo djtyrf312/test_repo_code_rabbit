@@ -29,7 +29,7 @@ reviews:
   labeling_instructions:
     - label: ""
       instructions: ""
-  path_filters: ['!src/ignoreFolder', ".coderabbit.yaml"]
+  path_filters: ['!src/ignoreFolder', "!.coderabbit.yaml"]
   path_instructions:
   - path: "*"
     instructions: 
