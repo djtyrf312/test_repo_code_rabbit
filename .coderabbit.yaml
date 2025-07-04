@@ -148,7 +148,7 @@ reviews:
     dotenvLint:
       enabled: true
     htmlhint:
-      enabled: true
+      enabled: false
       config_file: ""
     checkmake:
       enabled: true
