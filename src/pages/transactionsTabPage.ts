@@ -76,7 +76,6 @@ export class TransactionsTab extends BasePage {
     expectedText: string,
   ): Promise<void> {
     const row = this.row.filter({ hasText: rowText });
-
     await expect.soft(row).toContainText(expectedText);
   }
   private async expectLoaded(): Promise<void> {

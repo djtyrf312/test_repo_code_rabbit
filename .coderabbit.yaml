@@ -33,23 +33,24 @@ reviews:
   path_instructions:
   - path: "*"
     instructions: 
-      "User clear structure and naming conventions for functions, constants etc \n.
-      Proviede readable and maintainable syntax\n
-      Check the proper use of test.describe, test.beforeEach, test.afterEach.\n
-      Use test.describe in files with more than 1 test.\n
-      Using locators over selectors like page.$()\n
-      Waiting for elements using Playwright’s auto-waiting instead of manual waitForTimeout\n
-      Avoid using hardcoded timeouts and selectors\n
-      Test names should clearly describe behavior\n 
-      Shared setup logic should be extracted into fixtures or helper functions\n 
-      Avoid unnecessary navigation or reloading\n 
-      Avoid duplicated setup steps across tests\n 
-      Suggest improvements or refactorings\n 
-      Point out any flaky patterns or potential for better abstraction\n
-      Highlight code duplication and proposition for its refactoring\n
-      Review the TypeScript, JavaScript code for best practices.\n
-      Check for common security vulnerabilities,\n 
-      such as SQL injection, insecure dependencies, and sensitive data exposure."
+      "User clear structure and naming conventions for functions, constants etc.
+      Proviede readable and maintainable syntax
+      Check the proper use of test.describe, test.beforeEach, test.afterEach.
+      Use test.describe in files with more than 1 test.
+      Using locators over selectors like page.$()
+      Waiting for elements using Playwright’s auto-waiting instead of manual waitForTimeout
+      Avoid using hardcoded timeouts and selectors
+      Test names should clearly describe behavior
+      Shared setup logic should be extracted into fixtures or helper functions
+      Avoid unnecessary navigation or reloading
+      Avoid duplicated setup steps across tests
+      Suggest improvements or refactorings
+      Point out any flaky patterns or potential for better abstraction
+      Highlight code duplication and proposition for its refactoring
+      Review the TypeScript, JavaScript code for best practices
+      Check for common security vulnerabilities
+      such as SQL injection, insecure dependencies, and sensitive data exposure.
+      Allow soft assertions"
   abort_on_close: true
   disable_cache: false
   auto_review:
